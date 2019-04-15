@@ -1,0 +1,25 @@
+{
+    "name": "GOT Spoilers Remover",
+    "version": "1.0",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "icons":{
+        "128": "icon.png"
+    },
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "icon.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["*://*.facebook.com/*"],
+        "run_at": "document_start",
+        "js": ["filters/facebook_filter.js"]
+    }],
+    "permissions": ["declarativeContent", "storage"],
+    "description": "An extension that helps you avoid GOT spoilers on Facebook!",
+    "manifest_version": 2
+}
