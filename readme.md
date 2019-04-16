@@ -1,6 +1,6 @@
 # GOT Spoils Remover!
 
-A chrome extension that helps you avoir spoilers on Facebook.
+A chrome extension that helps you avoid spoilers on Facebook.
 
 ## Activate Developer Mode in Chrome
 
